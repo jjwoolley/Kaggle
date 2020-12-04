@@ -186,3 +186,4 @@ fit4.rf <- randomForest(Survived ~ Pclass + Sex + Age + SibSp + Parch + Fare,
 pred.rf.4 <- predict(fit4.rf, titanic.full.test, type = "response")
 submit.rf.4 <- tibble(PassengerId = titanic.full.test$PassengerId, Survived = pred.rf.4)
 #write.csv(submit.rf.4, file = "submit_rf_4.csv", row.names = FALSE)
+#test
